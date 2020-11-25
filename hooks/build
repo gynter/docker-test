@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+d=$(date "+%Y-%m-%d")
+
+docker build --build-arg BUILDARG_DATE=$d --build-arg BUILDARG_VCS_REF=$SOURCE_COMMIT --tag $IMAGE_NAME .
