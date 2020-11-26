@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 ARG BUILDARG_DATE
-ARG BUILDARG_VERSION=snapshot
+ARG BUILDARG_VERSION
 ARG BUILDARG_VCS_REF
 
 LABEL org.label-schema.schema-version="1.0" \
